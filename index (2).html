@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Riddhi Global Traders – Connecting Textile Markets Worldwide</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#fbf9f4;--bg2:#f1ece0;--card:#fff;--ink:#0b1f3f;--mut:#56627a;--gold:#c9a24a;--gtxt:#8a6a1c;--line:#e4dccb;--hbg:rgba(251,249,244,.93);--h1:#0b1f3f;--h2:#1d3a6e;--hink:#fff;--btn:#c9a24a;--btnink:#0b1f3f;color-scheme:light;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#081529;--bg2:#0e2040;--card:#12284d;--ink:#f3eedf;--mut:#a9b5cd;--gtxt:#e0bd6a;--line:#22406f;--hbg:rgba(8,21,41,.93);--h1:#050e1d;--h2:#143064;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#081529;--bg2:#0e2040;--card:#12284d;--ink:#f3eedf;--mut:#a9b5cd;--gtxt:#e0bd6a;--line:#22406f;--hbg:rgba(8,21,41,.93);--h1:#050e1d;--h2:#143064;color-scheme:dark}
+html{scroll-behavior:smooth;scroll-padding-top:calc(72px + env(safe-area-inset-top,0px))}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.65 Inter,system-ui,-apple-system,"Segoe UI",sans-serif}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--hbg)}
+h1,h2,h3{font-family:Fraunces,Georgia,"Times New Roman",serif;line-height:1.15;margin:0}
+a{color:inherit}
+.wrap{max-width:1120px;margin:0 auto;padding:0 22px}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:11;background:var(--hbg);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:66px}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none;font-family:Fraunces,Georgia,serif;font-weight:700;font-size:18px;line-height:1.1}
+.logo small{display:block;font:500 9.5px Inter,sans-serif;letter-spacing:.16em;text-transform:uppercase;color:var(--gtxt);margin-top:3px}
+nav a{margin-left:18px;text-decoration:none;font-size:14px;font-weight:500;color:var(--mut)}
+nav a:hover{color:var(--ink)}
+@media(max-width:860px){nav a:not(.cta){display:none}}
+.btn,.cta{display:inline-block;background:var(--btn);color:var(--btnink);padding:12px 24px;border-radius:999px;font-weight:600;text-decoration:none;border:0;cursor:pointer;font-size:15px;font-family:inherit}
+.cta{margin-left:18px;padding:9px 18px;font-size:14px;color:var(--btnink)!important}
+.btn.ghost{background:transparent;color:var(--hink);border:1.5px solid rgba(255,255,255,.5)}
+.btn.out{background:transparent;color:var(--ink);border:1.5px solid var(--gold)}
+.hero{background:radial-gradient(900px 520px at 85% 0,var(--h2),transparent 70%),var(--h1);color:var(--hink);min-height:min(100svh,840px);display:flex;align-items:center;overflow:hidden}
+.hero .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center;padding-top:56px;padding-bottom:70px}
+@media(max-width:860px){.hero .wrap{grid-template-columns:1fr}}
+.eyebrow{display:inline-block;font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:#e0bd6a;font-weight:600;margin-bottom:16px}
+.hero h1{font-size:clamp(36px,6vw,62px)}
+.hero h1 em{font-style:normal;color:#e0bd6a}
+.hero p{font-size:18px;opacity:.88;max-width:540px;margin:20px 0 30px}
+.row{display:flex;gap:12px;flex-wrap:wrap}
+section{padding:84px 0}
+section.alt{background:var(--bg2)}
+.kick{color:var(--gtxt);font-size:12px;letter-spacing:.16em;text-transform:uppercase;font-weight:600;margin-bottom:10px}
+h2{font-size:clamp(28px,4vw,42px)}
+.lead{color:var(--mut);max-width:680px;margin:14px 0 40px;font-size:17px}
+.facts{display:grid;grid-template-columns:repeat(4,1fr);border:1px solid var(--line);border-radius:20px;overflow:hidden;background:var(--card);margin-top:-44px;position:relative;z-index:2;box-shadow:0 18px 40px rgba(0,0,0,.12)}
+@media(max-width:860px){.facts{grid-template-columns:1fr 1fr;margin-top:-30px}}
+.fact{padding:22px;border-right:1px solid var(--line);border-bottom:1px solid var(--line)}
+.fact small{display:block;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--gtxt);font-weight:600;margin-bottom:6px}
+.fact b{font-family:Fraunces,Georgia,serif;font-size:18px}
+.grid{display:grid;gap:20px;grid-template-columns:repeat(auto-fill,minmax(250px,1fr))}
+.card{background:var(--card);border:1px solid var(--line);border-radius:22px;overflow:hidden;transition:transform .25s,box-shadow .25s}
+.card:hover{transform:translateY(-4px);box-shadow:0 14px 34px rgba(0,0,0,.14)}
+.sw{height:130px;display:grid;place-items:center}
+.sw svg{width:60px;height:60px;fill:none;stroke:#fff;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round;filter:drop-shadow(0 2px 6px rgba(0,0,0,.35))}
+.cb{padding:20px}
+.cb h3{font-size:20px;margin-bottom:6px}
+.cb p{margin:0 0 12px;color:var(--mut);font-size:14.5px}
+.chips{display:flex;flex-wrap:wrap;gap:6px}
+.chips span{font-size:12px;padding:4px 11px;border-radius:999px;background:var(--bg2);border:1px solid var(--line);color:var(--mut)}
+.eco{display:grid;grid-template-columns:repeat(5,1fr);gap:14px;counter-reset:s}
+@media(max-width:900px){.eco{grid-template-columns:1fr 1fr}}
+@media(max-width:560px){.eco{grid-template-columns:1fr}}
+.step{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:22px;counter-increment:s}
+.step::before{content:counter(s);display:grid;place-items:center;width:36px;height:36px;border-radius:50%;background:var(--gold);color:#0b1f3f;font-weight:700;margin-bottom:14px}
+.step h3{font-size:17px;margin-bottom:6px}
+.step p{margin:0;color:var(--mut);font-size:14px}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:28px}
+@media(max-width:860px){.two{grid-template-columns:1fr}}
+.box{background:var(--card);border:1px solid var(--line);border-radius:22px;padding:28px}
+.box h3{font-size:22px;margin-bottom:8px}
+.box p{color:var(--mut);margin:0 0 14px;font-size:15px}
+.list{list-style:none;margin:0;padding:0;display:grid;gap:10px}
+.list li{display:flex;gap:10px;font-size:15px}
+.list li::before{content:"✓";color:var(--gtxt);font-weight:700}
+.gsm{width:100%;border-collapse:collapse;font-size:14px;margin-top:6px}
+.gsm td,.gsm th{padding:9px 10px;border-bottom:1px solid var(--line);text-align:left}
+.gsm th{color:var(--gtxt);font-size:11px;letter-spacing:.12em;text-transform:uppercase}
+.pill{display:flex;gap:16px;align-items:flex-start}
+.ic{flex:0 0 46px;height:46px;border-radius:14px;background:var(--bg2);border:1px solid var(--line);display:grid;place-items:center;font-size:22px}
+.pill h3{font-size:18px;margin-bottom:4px}
+.pill p{margin:0;color:var(--mut);font-size:14.5px}
+.band{background:var(--h1);color:var(--hink);border-radius:26px;padding:44px;text-align:center;border:1px solid rgba(224,189,106,.35)}
+.band h2{color:inherit}.band p{opacity:.85;max-width:620px;margin:12px auto 22px}
+form{background:var(--card);border:1px solid var(--line);border-radius:22px;padding:26px;display:grid;gap:14px}
+label{font-size:13px;font-weight:600;color:var(--mut);display:grid;gap:6px}
+input,select,textarea{font:inherit;padding:12px 14px;border-radius:12px;border:1px solid var(--line);background:var(--bg);color:var(--ink);width:100%}
+.f2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+@media(max-width:560px){.f2{grid-template-columns:1fr}}
+.note{font-size:13px;color:var(--mut)}
+.ct{display:grid;gap:10px;font-size:15px;margin-bottom:20px}
+.ct a{text-decoration:none;font-weight:600}
+footer{background:var(--h1);color:var(--hink);padding:34px 0;font-size:14px}
+footer .wrap{display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap}
+footer em{font-style:normal;color:#e0bd6a}
+.wa{position:fixed;right:18px;bottom:calc(18px + env(safe-area-inset-bottom,0px));z-index:20;display:flex;align-items:center;gap:8px;background:#128c4a;color:#fff;padding:12px 18px;border-radius:999px;font-weight:600;font-size:14px;text-decoration:none;box-shadow:0 8px 24px rgba(0,0,0,.28)}.wa svg{width:22px;height:22px;fill:none;stroke:#fff;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}.rv{opacity:0;transform:translateY(18px);transition:opacity .6s,transform .6s}
+.rv.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}.card{transition:none}}
+</style>
+</head>
+<body>
+<header><div class="wrap nav">
+<a class="logo" href="#top"><svg width="38" height="38" viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="19" fill="#0b1f3f" stroke="#c9a24a" stroke-width="1.5"/><path d="M14 28V12h8a5 5 0 0 1 0 10h-8m8 0l6 6" fill="none" stroke="#e0bd6a" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Riddhi Global Traders<small>Textiles · Fabrics · Garments</small></span></a>
+<nav><a href="#products">Products</a><a href="#ecosystem">Ecosystem</a><a href="#payments">Payments</a><a href="#quality">Quality</a><a class="cta" href="#enquiry">Enquire</a></nav>
+</div></header>
+
+<main id="top">
+<div class="hero"><div class="wrap">
+<div>
+<span class="eyebrow">Textile &amp; Apparel · Import &amp; Export</span>
+<h1>Connecting <em>Textile Markets</em> Worldwide.</h1>
+<p>A B2B textile trading company supplying sarees, women’s wear, fabrics, home textiles and raw materials to buyers in domestic and international markets, with quality graded by GSM and flexible payment terms.</p>
+<div class="row"><a class="btn" href="#enquiry">Request samples</a><a class="btn ghost" href="#products">View categories</a></div>
+</div>
+<svg viewBox="0 0 420 400" role="img" aria-label="Stacked fabric rolls in woven patterns" style="width:100%;max-width:460px;justify-self:center">
+<defs>
+<pattern id="chk" width="26" height="26" patternUnits="userSpaceOnUse"><rect width="26" height="26" fill="#1d3a6e"/><rect width="13" height="26" fill="#fff" opacity=".16"/><rect width="26" height="13" fill="#fff" opacity=".16"/></pattern>
+<pattern id="str" width="14" height="14" patternUnits="userSpaceOnUse"><rect width="14" height="14" fill="#7a1f3d"/><rect width="4" height="14" fill="#e0bd6a"/></pattern>
+<pattern id="dot" width="22" height="22" patternUnits="userSpaceOnUse"><rect width="22" height="22" fill="#2e7d5b"/><circle cx="11" cy="11" r="4" fill="#fbe6a8"/></pattern>
+<pattern id="dia" width="28" height="28" patternUnits="userSpaceOnUse"><rect width="28" height="28" fill="#0f2a55"/><path d="M14 3l11 11-11 11L3 14z" fill="none" stroke="#c9a24a" stroke-width="2"/></pattern>
+</defs>
+<rect x="30" y="300" width="360" height="62" rx="31" fill="url(#dia)"/><ellipse cx="46" cy="331" rx="26" ry="31" fill="#f2e3c4"/><ellipse cx="46" cy="331" rx="10" ry="13" fill="#a8855a"/>
+<rect x="60" y="226" width="330" height="62" rx="31" fill="url(#dot)"/><ellipse cx="76" cy="257" rx="26" ry="31" fill="#f2e3c4"/><ellipse cx="76" cy="257" rx="10" ry="13" fill="#a8855a"/>
+<rect x="20" y="152" width="360" height="62" rx="31" fill="url(#chk)"/><ellipse cx="36" cy="183" rx="26" ry="31" fill="#f2e3c4"/><ellipse cx="36" cy="183" rx="10" ry="13" fill="#a8855a"/>
+<rect x="70" y="78" width="320" height="62" rx="31" fill="url(#str)"/><ellipse cx="86" cy="109" rx="26" ry="31" fill="#f2e3c4"/><ellipse cx="86" cy="109" rx="10" ry="13" fill="#a8855a"/>
+</svg>
+</div></div>
+
+<div class="wrap"><div class="facts rv">
+<div class="fact"><small>Industry</small><b>Textile &amp; Apparel</b></div>
+<div class="fact"><small>Business model</small><b>Import &amp; Export</b></div>
+<div class="fact"><small>Market</small><b>Domestic &amp; International</b></div>
+<div class="fact"><small>Business type</small><b>B2B Textile Trading</b></div>
+</div></div>
+
+<section id="products"><div class="wrap">
+<div class="kick rv">Product categories</div>
+<h2 class="rv">From raw material to fashion</h2>
+<p class="lead rv">Seven categories across the textile chain, sourced from manufacturers and quoted to your specification.</p>
+<div class="grid">
+<div class="card rv"><div class="sw" style="background:linear-gradient(90deg,#b3261e 0 14%,#e0bd6a 14% 17%,#7a1f3d 17% 83%,#e0bd6a 83% 86%,#b3261e 86%)"><svg viewBox="0 0 64 64"><path d="M14 8c10 6 22 6 36 0v48H14z"/><path d="M14 20c12 6 24 6 36 0" opacity=".6"/></svg></div><div class="cb"><h3>Sarees</h3><p>Festive, daily and occasion wear in a range of weaves.</p><div class="chips"><span>Cotton</span><span>Silk-cotton</span><span>Georgette</span><span>Art silk</span></div></div></div>
+<div class="card rv"><div class="sw" style="background:radial-gradient(circle at 12px 12px,#fbe6a8 4px,transparent 5px) 0 0/24px 24px,#2e7d5b"><svg viewBox="0 0 64 64"><path d="M24 8h16l-2 14 10 34H16l10-34z"/></svg></div><div class="cb"><h3>Women’s dresses &amp; kurtis</h3><p>Dress material and ready kurtis for wholesale buyers.</p><div class="chips"><span>Rayon</span><span>Cotton</span><span>Crepe</span><span>Chanderi</span></div></div></div>
+<div class="card rv"><div class="sw" style="background:linear-gradient(135deg,#6e1236,#2a0d26)"><svg viewBox="0 0 64 64"><path d="M22 8l10 8 10-8v14H22z"/><path d="M22 22L8 56h48L42 22"/></svg></div><div class="cb"><h3>Lehengas</h3><p>Festive and bridal lehenga sets and fabric.</p><div class="chips"><span>Silk</span><span>Georgette</span><span>Net</span><span>Embroidered</span></div></div></div>
+<div class="card rv"><div class="sw" style="background:repeating-linear-gradient(0deg,#2e7d5b 0 18px,#e8dfc8 18px 24px)"><svg viewBox="0 0 64 64"><path d="M8 26h48v22H8z"/><path d="M8 26l6-10h36l6 10"/></svg></div><div class="cb"><h3>Bedsheets &amp; home textiles</h3><p>Bedsheets, towels, curtains and pillow covers.</p><div class="chips"><span>Cotton</span><span>Poly-cotton</span><span>Microfiber</span><span>Furnishings</span></div></div></div>
+<div class="card rv"><div class="sw" style="background:repeating-linear-gradient(90deg,#0f2a55 0 14px,#1d3a6e 14px 28px)"><svg viewBox="0 0 64 64"><path d="M10 14h44v36H10z"/><path d="M10 24h44M10 34h44M10 44h44" opacity=".6"/></svg></div><div class="cb"><h3>Fabrics &amp; woven textiles</h3><p>Woven and knitted fabrics, graded by GSM.</p><div class="chips"><span>Woven</span><span>Knitted</span><span>Linen</span><span>Silk</span><span>Blended</span></div></div></div>
+<div class="card rv"><div class="sw" style="background:linear-gradient(135deg,#4a5b86,#1b2a52)"><svg viewBox="0 0 64 64"><path d="M22 10l-14 8 6 10 6-3v27h24V25l6 3 6-10-14-8c-2 5-6 7-10 7s-8-2-10-7z"/></svg></div><div class="cb"><h3>Ready-made garments</h3><p>Everyday and workwear in bulk.</p><div class="chips"><span>T-shirts</span><span>Shirts</span><span>Trousers</span><span>Uniforms</span></div></div></div>
+<div class="card rv"><div class="sw" style="background:radial-gradient(circle at 20px 20px,rgba(255,255,255,.3) 6px,transparent 7px) 0 0/40px 40px,#a07a22"><svg viewBox="0 0 64 64"><ellipse cx="32" cy="14" rx="18" ry="6"/><path d="M14 14v36c0 3 8 6 18 6s18-3 18-6V14"/></svg></div><div class="cb"><h3>Yarn, thread &amp; raw materials</h3><p>Inputs for spinners, weavers and garment makers.</p><div class="chips"><span>Cotton yarn</span><span>Polyester yarn</span><span>Sewing thread</span><span>Woven fabric</span></div></div></div>
+</div></div></section>
+
+<section class="alt" id="ecosystem"><div class="wrap">
+<div class="kick rv">Our ecosystem</div>
+<h2 class="rv">One partner for the whole trade chain</h2>
+<p class="lead rv">We are building an ecosystem that streamlines textile trading, so buyers and manufacturers deal with one coordinated process instead of many separate steps.</p>
+<div class="eco">
+<div class="step rv"><h3>Sourcing</h3><p>We match your requirement with suitable manufacturers across India’s textile clusters.</p></div>
+<div class="step rv"><h3>Samples</h3><p>Samples are arranged so you approve before bulk.</p></div>
+<div class="step rv"><h3>Quality</h3><p>Goods are specified by composition and GSM and checked against the approved sample.</p></div>
+<div class="step rv"><h3>Payments</h3><p>Flexible terms, including LC and staged payments, agreed upfront.</p></div>
+<div class="step rv"><h3>Shipment</h3><p>Dispatch is arranged and documentation supported.</p></div>
+</div></div></section>
+
+<section id="payments"><div class="wrap two" style="align-items:start">
+<div class="box rv"><div class="kick">Payments &amp; credit</div><h3>Flexible, transparent terms</h3><p>Payment terms are agreed in writing before production, so both sides know what to expect.</p>
+<ul class="list"><li>Letter of Credit (LC) for larger international orders</li><li>Advance with staged payment milestones</li><li>Credit terms for repeat buyers, subject to approval</li><li>Clear price, quantity and delivery terms on every order</li></ul></div>
+<div class="box rv" id="quality"><div class="kick">Quality by GSM</div><h3>Specify exactly what you need</h3><p>Every product is described by composition, GSM, width and finish, so there is no ambiguity between sample and bulk.</p>
+<table class="gsm"><tr><th>Weight class</th><th>Typical use</th></tr><tr><td>Light (under 150 GSM)</td><td>Sarees, shirting, summer wear</td></tr><tr><td>Medium (150–250 GSM)</td><td>Kurtis, dresses, bedsheets</td></tr><tr><td>Heavy (250+ GSM)</td><td>Towels, blankets, furnishings</td></tr></table></div>
+</div></section>
+
+<section class="alt"><div class="wrap">
+<div class="kick rv">Why Riddhi Global Traders</div>
+<h2 class="rv" style="margin-bottom:34px">Trade built on clarity and consistency</h2>
+<div class="two">
+<div style="display:grid;gap:26px">
+<div class="pill rv"><div class="ic">🧵</div><div><h3>Samples before bulk</h3><p>Approve the fabric or garment in hand before committing to volume.</p></div></div>
+<div class="pill rv"><div class="ic">📋</div><div><h3>Written specifications</h3><p>Composition, GSM, sizes and colours are documented.</p></div></div>
+</div>
+<div style="display:grid;gap:26px">
+<div class="pill rv"><div class="ic">✅</div><div><h3>Checked suppliers</h3><p>We verify supplier registration and sample quality before recommending them.</p></div></div>
+<div class="pill rv"><div class="ic">🌍</div><div><h3>Domestic and international</h3><p>Supply to businesses in India and overseas markets.</p></div></div>
+</div></div></div></section>
+
+<section id="enquiry"><div class="wrap">
+<div class="band rv" style="margin-bottom:56px"><h2>Connecting Textile Markets Worldwide</h2><p>Tell us what you are sourcing and we will reply with options, specifications and pricing.</p><div class="row" style="justify-content:center"><a class="btn" href="https://wa.me/917766815914?text=Hello%20Riddhi%20Global%20Traders%2C%20I%20would%20like%20to%20enquire%20about%20your%20textiles." target="_blank" rel="noopener">Chat on WhatsApp</a><a class="btn ghost" href="mailto:Riddhiglobaltraders@gmail.com">Email us</a></div></div>
+<div class="two" style="align-items:start">
+<div>
+<div class="kick rv">Get in touch</div>
+<h2 class="rv" style="margin-bottom:18px">Request samples or a quote</h2>
+<div class="ct"><div>📞 Phone / WhatsApp: <a href="tel:+917766815914">+91 77668 15914</a></div><div>✉️ Email: <a href="mailto:Riddhiglobaltraders@gmail.com">Riddhiglobaltraders@gmail.com</a></div></div>
+<p class="note">Share the category, material, GSM, quantity and destination, and we will respond with a quote.</p>
+</div>
+<form id="f">
+<div class="f2"><label>Your name<input name="n" required></label><label>Company<input name="c"></label></div>
+<div class="f2"><label>Country / city<input name="city" placeholder="e.g. Dubai, UAE"></label>
+<label>Category<select name="p"><option>Sarees</option><option>Women’s dresses &amp; kurtis</option><option>Lehengas</option><option>Bedsheets &amp; home textiles</option><option>Fabrics &amp; woven textiles</option><option>Ready-made garments</option><option>Yarn, thread &amp; raw materials</option><option>Other</option></select></label></div>
+<div class="f2"><label>Approx. quantity<input name="q" placeholder="e.g. 5,000 m / 1,000 pcs"></label><label>Preferred payment<select name="pay"><option>Not decided</option><option>Letter of Credit (LC)</option><option>Advance + staged payments</option><option>Credit terms</option></select></label></div>
+<label>Details (material, GSM, colours, budget)<textarea name="m" rows="4"></textarea></label>
+<div class="row"><button class="btn" type="submit">Send by email</button><button class="btn out" type="button" id="wb">Send via WhatsApp</button></div>
+<div class="note" id="st">Choose email or WhatsApp to send your enquiry.</div>
+</form>
+</div></div></section>
+</main>
+<a class="wa" href="https://wa.me/917766815914?text=Hello%20Riddhi%20Global%20Traders%2C%20I%20would%20like%20to%20enquire%20about%20your%20textiles." target="_blank" rel="noopener" aria-label="Chat on WhatsApp"><svg viewBox="0 0 24 24"><path d="M3 21l1.6-4.6A8.5 8.5 0 1 1 8 19.6z"/><path d="M9 8.5c0 3.5 3 6.5 6.5 6.5l1-1.6-2-1-1 .8a4 4 0 0 1-2-2l.8-1-1-2z"/></svg>WhatsApp</a>
+
+<footer><div class="wrap"><div>© 2026 Riddhi Global Traders · <em>Connecting Textile Markets Worldwide</em></div><div>Riddhiglobaltraders@gmail.com · +91 77668 15914</div></div></footer>
+
+<script>
+var EMAIL="Riddhiglobaltraders@gmail.com";
+document.getElementById("f").addEventListener("submit",function(e){
+e.preventDefault();var d=new FormData(e.target);
+var body="Name: "+d.get("n")+"\nCompany: "+d.get("c")+"\nCountry/City: "+d.get("city")+"\nCategory: "+d.get("p")+"\nQuantity: "+d.get("q")+"\nPayment: "+d.get("pay")+"\n\n"+d.get("m");
+try{location.href="mailto:"+EMAIL+"?subject="+encodeURIComponent("Enquiry: "+d.get("p"))+"&body="+encodeURIComponent(body);}catch(x){}
+document.getElementById("st").textContent="Thank you. If your email app did not open, please email or WhatsApp us directly.";
+});
+document.getElementById("wb").addEventListener("click",function(){var d=new FormData(document.getElementById("f"));var t="Hello Riddhi Global Traders,\nName: "+d.get("n")+"\nCompany: "+d.get("c")+"\nCountry/City: "+d.get("city")+"\nCategory: "+d.get("p")+"\nQuantity: "+d.get("q")+"\nPayment: "+d.get("pay")+"\n\n"+d.get("m");window.open("https://wa.me/917766815914?text="+encodeURIComponent(t),"_blank");});
+var els=document.querySelectorAll(".rv");
+if("IntersectionObserver" in window){var io=new IntersectionObserver(function(en){en.forEach(function(x){if(x.isIntersecting){x.target.classList.add("in");io.unobserve(x.target)}})},{threshold:.12});els.forEach(function(el){io.observe(el)})}else{els.forEach(function(el){el.classList.add("in")})}
+</script>
+</body>
+</html>
